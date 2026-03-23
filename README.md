@@ -57,13 +57,16 @@ Si encuentras un problema durante la ejecución, el script lanzará un código d
     
   o se puede modificar el bash para poder agregar el comando "ssh-manager" y ejecutar en cualquier lugar de la terminal sin tener que moverte entre directorio.
 
-    1.Clonar o copiar el script: Guarda el código en un archivo llamado ssh-manager.sh pueder ponerle si te lo permite .ssh-manager.sh para que se oculte
+    1.Clonar o copiar el script: Guarda el código en un archivo llamado ssh-manager.sh en el directorio //home/tu-usuario/.ssh-manager.
+    mkdir ~/.ssh-manager
+    Aqui clonaras en archivo ssh-manager.sh y le daras permiso de ejecucion
+    chmod +x ~/.ssh-manager/ssh-manager.sh
     
     2.Editar bash 
     nano ~/.bashrc
     
     3.Ve al final del archivo y añade la siguiente línea:
-    alias ssh-manager='/ruta/a/tu/script/ssh-manager.sh'
+    alias ssh-manager='/home/tu-usuario/.ssh-manager/ssh-manager.sh'
     
     4.Guarda y sal, Control + X , S , Enter
     
